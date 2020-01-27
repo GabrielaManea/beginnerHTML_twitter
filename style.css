@@ -1,0 +1,409 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	overflow-x: hidden;
+	padding: 0;
+}
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	background-color: rgb(21, 32, 43);
+	display: flex;
+}
+.nav-menu {
+	width: 25vw;
+	height: auto;
+	border-right: 1px solid rgba(136, 153, 166, .4);
+}
+
+.content-container {
+	width: 45vw;
+	height: auto;
+}
+
+.profile-container {
+	width: 30vw;
+	height: auto;
+	border-left: 1px solid rgba(136, 153, 166, .4);
+}
+
+.nav-menu > .menu-twitter {
+	list-style: none;
+	color: white;
+	font-size: 20px;
+	font-family: sans-serif;
+	padding-left: 30%;
+	font-weight: bold;
+}
+
+.nav-menu > .menu-twitter > li {
+	padding-bottom: 2%;
+	padding-top: 2%;
+	padding-left: 5%;
+
+
+	/*border-radius: 30px;
+	border: 1px solid white;*/
+}
+
+.nav-menu > .menu-twitter > li > span {
+	padding-bottom: 2%;
+	padding-top: 2%;
+
+}
+
+.nav-menu > .menu-twitter > li >  i {
+	padding: 4% 4% 4% 4%;
+}
+
+.nav-menu > .menu-twitter > li:hover  {
+	border-radius: 30px;
+	background-color: rgba(224, 36, 94, .1);
+	color: rgb(224, 36, 94);
+	cursor: pointer;
+}
+
+.nav-menu > .menu-twitter > li:first-child:hover {
+	border-radius: 0;
+	color: white;
+	background-color: rgb(21, 32, 43);
+}
+
+.nav-menu > .menu-twitter > li > .fa-twitter:hover {
+	border-radius: 50%;
+	background-color: rgba(224, 36, 94, .1);
+	color: rgb(224, 36, 94);
+}
+
+.nav-menu > .menu-twitter > li > i {
+	width: 20%;
+	font-size: 26px;
+
+}
+
+.nav-menu > .menu-twitter > li > .btn {
+	background-color: rgb(224, 36, 94);
+	border: none;
+	border-radius: 30px;
+	font-family: sans-serif;
+	font-size: 16px;
+	padding: 6%;
+	width: 90%;
+	color: white;
+	font-weight: 600;
+
+}
+
+.nav-menu > .menu-twitter > li:last-child:hover {
+	border-radius: 0;
+	color: white;
+	background-color: rgb(21, 32, 43);
+}
+
+.nav-menu > .menu-twitter > li > .btn:hover {
+	color: rgb(224, 36, 94);
+	background-color: white;
+	transition: background-color 0.9s ease;
+	transition: color 0.9s ease;
+	cursor: pointer;
+
+}
+
+.content-search {
+	position: relative;
+}
+
+.content-search > input {
+	outline: 0;
+	width: 60%;
+	border-radius: 20px;
+	margin:  5% 20%;
+	padding: 1.2% 3% 1.2% 6%;
+	background-color: rgba(136, 153, 166, .4);
+	border: 0px solid black ;
+	color: rgba(256, 256, 256, .5);
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+.content-search > .fa-search {
+	position: absolute;
+	left: 22%;
+	top: 41%;
+	color: rgba(256, 256, 256, .7);
+}
+
+.content-search > .fa-search:hover {
+	cursor: pointer;
+}
+
+.content-menu > ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	margin-left: 0;
+	margin-top: 0;
+	padding-left: 0;
+	/*padding-bottom: 3%;*/
+	border-bottom: 1px solid rgba(136, 153, 166, .4);
+	font-family: sans-serif;
+	color: rgba(136, 153, 166, .5);
+	font-weight: 600;
+}
+
+.content-menu > ul > li {
+	padding: 3% 6%;
+	border-bottom: 2px solid rgb(21, 32, 43);
+
+
+}
+
+.content-menu > ul > li:hover {
+	background-color: rgba(224, 36, 94, .1);
+	color: rgb(224, 36, 94);
+	cursor: pointer;
+	border-bottom: 2px solid rgb(224, 36, 94);
+}
+
+.content-intro {
+	display: flex;
+	padding: 1% 3% 0 3%;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 0;
+
+}
+
+.content-intro > .avatar >  .img-avatar {
+	width: 40px;
+	border-radius: 50%;
+}
+
+.content-intro > .avatar:hover {
+	cursor: pointer;
+}
+
+.content-intro > .name-avatar {
+	flex-grow: 3;
+	margin-left: 2%;
+}
+
+.content-intro > .name-avatar > .name {
+	font-family: sans-serif;
+	font-size: 15px;
+	letter-spacing: 0px;
+	font-weight: 800;
+	color: white;
+	padding-right: 1%;
+}
+
+.content-intro > .name-avatar > .id {
+	font-family: sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	color: rgba(136, 153, 166, .9);
+	padding-right: 1%;
+}
+
+.content-intro > .name-avatar > .dots {
+	
+	display: inline-block;
+	height: 3px;
+  	width: 3px;
+  	background-color: rgba(136, 153, 166, .9);
+  	border-radius: 50%;
+  	margin-bottom: 2px;
+}
+
+.content-intro > .name-avatar > .time {
+	font-family: sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	color: rgba(136, 153, 166, .9);
+}
+
+
+.content-intro > .name-avatar > span:first-child:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.content-intro > .dropdwn-menu > .fa-chevron-down {
+	color: rgba(136, 153, 166, .9);
+}
+
+.content-intro > .dropdwn-menu > .fa-chevron-down:hover {
+	cursor: pointer;
+	color: rgb(224, 36, 94);
+}
+
+.content-desc {
+	margin: 0 4% 0 4%;
+	text-align: justify;
+	padding-top: 0;
+}
+
+.content-desc > p {
+	color: white;
+	font-size: 16px;
+	font-family: sans-serif;
+	line-height: 18px;
+	font-weight: 600;
+}
+
+.content-photo {
+	width: 100%;
+	border-radius: 25px;
+}
+
+.content-photo > .content-img {
+	width: 100%;
+	padding: 0 4%;
+	border-radius: 7%;
+	/*rgb(136, 153, 166);*/
+}
+
+.photo-react {
+	border-bottom: 1px solid rgba(136, 153, 166, .4);
+}
+
+.photo-react > ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	padding-left: 0;
+	padding-right: 5%;
+	margin-left: 0;
+	font-family: sans-serif;
+	font-size: 16px;
+	color: rgb(136, 153, 166);
+	font-weight: 600;
+	align-items: center;
+	
+}
+
+.photo-react > ul > li > i{
+	padding: 70%;
+	
+}
+
+
+
+.photo-react > ul > li > .fa-comment:hover {
+	border-radius: 50%;
+	color: rgb(0,191,255);
+	cursor:pointer;
+	background-color: rgba(0,191,255, .1)
+}
+
+.photo-react > ul > li > .fa-retweet:hover {
+	border-radius: 50%;
+	color: rgb(0, 205, 50);
+	cursor:pointer;
+	background-color: rgba(50, 205, 50, .1);
+}
+
+.photo-react > ul > li > .fa-heart:hover {
+	border-radius: 50%;
+	cursor:pointer;
+	background-color: rgba(224, 36, 94, .1);
+	color: rgb(224, 36, 94);
+}
+
+.photo-react > ul > li > .fa-arrow-up:hover {
+	border-radius: 50%;
+	color: rgb(0,191,255);
+	cursor:pointer;
+	background-color: rgba(0,191,255, .1)
+}
+
+.profile-container > .section-profile-container {
+	width: 20vw;
+	height: auto;
+	margin: 5% 10%;
+	border: 1px solid rgba(136, 153, 166, .4);
+	border-radius: 25px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.profile-container > .section-profile-container >  .profile-photo > img{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	margin-top: 20%;
+}
+
+
+.profile-container > .section-profile-container > .profile-desc {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.profile-container > .section-profile-container > .profile-desc > ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-left:0;
+	padding-top: 10%;
+} 
+
+.profile-container > .section-profile-container > .profile-desc > ul > li {
+	padding-bottom: 10%;
+}
+
+.profile-container > .section-profile-container > .profile-desc > ul > li:first-child {
+	padding-bottom: 0;
+}
+
+.profile-container > .section-profile-container > .profile-desc > ul > li > i {
+	color: rgb(136, 153, 166);
+	font-size: 18px;
+}
+
+.profile-container > .section-profile-container > .profile-desc > ul > li > span {
+	color: white;
+	font-family: sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.profile-container > .section-profile-container > .profile-desc > ul > li > span:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.profile-container > .section-profile-container > .profile-desc > ul > li > i:hover {
+	cursor: pointer;
+}
+
+.profile-container > .section-profile-container > .profile-desc > .follow {
+	margin-top: 15%;
+	border: 1px solid rgb(224, 36, 94);
+	padding: 7% 35%;
+	color: rgb(224, 36, 94);
+	border-radius: 25px;
+	margin-bottom: 10%;
+	background-color: rgb(21, 32, 43);
+	font-size: 18px;
+	font-family: sans-serif;
+	font-weight: 600;
+	outline: 0;
+}
+
+.profile-container > .section-profile-container > .profile-desc > .follow:hover {
+	border: 1px solid white;
+	color: white;
+	cursor: pointer;
+	content: "Unfollow";
+}
+
+
+
